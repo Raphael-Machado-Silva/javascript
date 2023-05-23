@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Teste de JavaScript</title>
     <style>
         *{
@@ -12,13 +13,103 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         body{
-           
-            background-image: linear-gradient(to bottom, #a362e0, #84fadc);
-
+            background-color: #84fadc;
+            background-image: linear-gradient(to top, rgb(147, 98, 211), rgb(133, 250, 221));
+        }
+        header{
+            background-color: rgb(92, 185, 157);
+        }
+        header>h1{
+            text-align: center;
+            font-size: 2em;
+            margin-top: 0px;
+            padding: 20px;
+        }
+        nav{
+            background-color: rgb(190, 144, 233);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 0px 15px;
+        }
+        nav > a:hover{
+            background-color: lightblue;
+            text-decoration: underline;
+            color: brown;
+        }
+        main{
+            background-color: cornflowerblue;
+            max-width: 750px;
+            margin: auto;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        main > section > article > h2{
+            text-align: center;
+            padding-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        main > section> article> p {
+            text-indent: 20px;
+            margin: auto;
+            text-align: justify;
+            padding: 15px;
+        }
+        footer{
+            background-color: #2D4030;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            position: relative;
+            bottom: 0;
+            padding: 15px;
+            background-color: #000000; /* exemplo de cor de fundo */
         }
     </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Meu site com JavaScript</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Entre em Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Teste de Main</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur perspiciatis deleniti quas pariatur distinctio consequatur quos aut error ea, similique illum doloremque inventore fuga officia vitae odit est. Dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, assumenda? Eum autem facere quia et itaque sed aliquam iste fugit, illo distinctio magnam debitis nesciunt alias labore dolor, laborum natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus unde sint, vero mollitia consequuntur neque omnis minus odio sequi nihil suscipit exercitationem dignissimos doloremque vel pariatur libero quo, numquam iusto!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corporis eligendi maiores ad assumenda aut quidem amet earum maxime sit commodi, rerum minima unde odit, labore ea cumque. Totam, aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti a fuga accusamus vitae perferendis minus facere ipsam quisquam quod explicabo sapiente consequatur tenetur, neque sequi quam dignissimos atque pariatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corporis eligendi maiores ad assumenda aut quidem amet earum maxime sit commodi, rerum minima unde odit, labore ea cumque. Totam, aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti a fuga accusamus vitae perferendis minus facere ipsam quisquam quod explicabo sapiente consequatur tenetur, neque sequi quam dignissimos atque pariatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corporis eligendi maiores ad assumenda aut quidem amet earum maxime sit commodi, rerum minima unde odit, labore ea cumque. Totam, aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti a fuga accusamus vitae perferendis minus facere ipsam quisquam quod explicabo sapiente consequatur tenetur, neque sequi quam dignissimos atque pariatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corporis eligendi maiores ad assumenda aut quidem amet earum maxime sit commodi, rerum minima unde odit, labore ea cumque. Totam, aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti a fuga accusamus vitae perferendis minus facere ipsam quisquam quod explicabo sapiente consequatur tenetur, neque sequi quam dignissimos atque pariatur.</p>
+            </article>
+        </section>
+    </main>
+    <footer><p>Site criado por Raphael Machado Silva para ser programador</p></footer>
+
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        window.alert(`Olá, seja bem-vindo senhor ${nome}!`)
+        /*-------------------------------------------------------*/
+        var idade = Number(window.prompt('Qual sua data de nascimento?'))
+        var resultado = 2023 - idade
+        window.alert (`Sua idade então é ${resultado}`)
+        /*-----------------------------------------------------------*/
+        var n1 = Number(window.prompt("Digite um número, por favor:"))
+        var n2 = Number(window.prompt("Digite outro número:"))
+        var soma = n1 + n2
+        window.alert(`O resultado da soma dos números ${n1} + ${n2} é respectivamente ${soma}!`)
+    </script>
 </body>
 </html>

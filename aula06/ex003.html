@@ -22,14 +22,12 @@
     <p>Já me livrei da maldição!!!</p>
            <!--Soma de variaveis-->
     <script>
-        var n1 = window. prompt('Digite um número!')
-        var n2 = window. prompt ('Digite outro número, por favor!')
         /*Os valores são recebidos em strings e devem ser convertidos para números para evitar erros, usando a tag parseFloat, ou utilize apenas a tag Number que ele se vira e faz virar um número, já para transformar um número ou outra coisa em string apenas colcoar String ao invés das tags acima */
-        var num1 = Number(n1)
-        var num2 = Number(n2)
-
-        var soma = num1 + num2
-        window. alert('O valor da soma dos mesmos é '+ soma)
+        var n1 = Number(window. prompt('Digite um número!'))
+        var n2 = Number(window. prompt ('Digite outro número, por favor!'))
+        
+        var soma = n1 + n2
+        window. alert('O valor da soma dos mesmos é '+ String(soma))
 
         /*---------------------Outro Exemplo----------------------*/
 

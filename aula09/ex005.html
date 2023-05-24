@@ -9,7 +9,7 @@
         body{
             background: rgb(112, 169, 235);
             color: white;
-            font: normal 18pt arial;
+            font: normal 16pt arial;
         }
     </style>
 </head>
@@ -17,9 +17,34 @@
     <h1>Iniciando Estudos com Dom</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>Dom</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
-    <script>
+    <script> 
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+
+        window.document.write('Olá, Mundo!') /*adicionando coisas usando o DOM, usando esta tag write*/ 
+        window.document.write(p1.innerHTML)
+        
+        /*Também é possível reescrever algo usando a tag name, apenas a chamando, para facilitar usar a mesma dentro de uma variavel como no exemplo acima */
+       
+        p1.style.color = 'blue' /*Desta forma também é possível mudar o style*/
+        corpo.style.backgroundColor = 'gray'
+
+        /*Também é possível chamar algum elemento por ID, Nome ou Classe */
+        var d = window.document.getElementById('msg')
+
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando e mudando o conteudo desta div...'
+
+        /*Também é possível selecionar usando SELECTOR */
+        
+        var d2 = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+
+        
+        
+        
 
     </script>
 </body>

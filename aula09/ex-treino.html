@@ -11,19 +11,24 @@
 
     <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa cum vel rerum expedita similique eveniet vitae amet quae eligendi aliquam, laboriosam recusandae? Delectus illo error voluptas tenetur fuga, vel optio.</P>
 
-    <p id="id">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit fuga quos accusantium fugiat beatae repellendus saepe provident, sunt quod voluptas, adipisci iure rerum voluptatibus. Reiciendis sit corrupti blanditiis sint culpa.</p>
+    <p id="idTeste">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit fuga quos accusantium fugiat beatae repellendus saepe provident, sunt quod voluptas, adipisci iure rerum voluptatibus. Reiciendis sit corrupti blanditiis sint culpa.</p>
 
     <div class="class">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates veniam similique delectus fugiat, asperiores porro. Tenetur deserunt quas, voluptatum molestias maiores accusantium ex omnis labore iure odit, aperiam odio!</p>
     </div>
 
-    <script>
-        var text = document.getElementsByTagName('p')[0]
+    <script> /*Também deve-se usar a tag CONST ou LET ao inves de VAR */
+        const text = document.getElementsByTagName('p')[0]
         text.style.color = 'blue'
         text.style.backgroundColor = 'white'
 
-        var corpo = document.body
+        const corpo = document.body
         corpo.style.backgroundColor = 'gray'
+
+        const id = document.getElementById('idTeste')
+        id.style.backgroundColor = ('green')
+        id.style.color = "white"
+        id.innerText = 'Estou Modificando o Conteúdo deste P.'
 
     </script>
 </body>

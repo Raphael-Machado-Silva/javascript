@@ -17,26 +17,40 @@
             color: white;
             cursor: pointer;
             border-radius: 15px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 10px black;
             width: 200px;
             height: 200px;
-            line-height: 200px; /*Tag para centralizar dentro de um bloco*/
+            line-height: 200px; /*Tag para centralizar o texto dentro de um bloco*/
             text-align: center;
+            position: absolute; /*Tags usadas para centralizar a div no meio da viewport */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>  <!--EVENTOS DOM-->
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
 
-
-    <script>
+    <script> /*Pode-se usar o querySelector ou por id neste caso da função clicar */
         function clicar() {
-            let a = window.document.querySelector('div#area')
-            a.innerText = 'Clicou'
-            a.style.background = 'blue'
-
+            let clic = window.document.querySelector ('div#area')
+            clic.innerText = 'Clicou'
+            clic.style.background = 'blue'
         }
-
+        function entrar(){
+            let ent = window.document.querySelector ('div#area')
+            ent.innertext = 'Entrou'
+            ent.style.background = 'yellow'
+            ent.style.color = 'black'
+        }
+        function sair(){
+            let exit = window.document.querySelector ('div#area')
+            exit.style.background = 'gray'
+            exit.innerText = 'Saiu'
+        }
     </script>
 </body>

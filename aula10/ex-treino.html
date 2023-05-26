@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Treino  de Function</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        div#area{
+            background-color: coral;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 300px; /*tAG IMPORTANTE PARA ALINHAR TEXTO DENTRO DE UM BLOCO*/
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px black;
+            position: absolute; /*Tags usadas para centralizar a div no meio da viewport */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Treino de Função e Escopo em JavaScript</h1>
+
+    <div id="area" onclick="click">Modifique aqui!</div>
+
+    <script>
+       const div = window.document.querySelector('div#area')
+        div.addEventListener('click', clicou)
+
+        function clicou (){
+            let area = window.document.querySelector('div#area')
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+            area.style. color = 'white'
+        }
+    </script>
 </body>
 </html>

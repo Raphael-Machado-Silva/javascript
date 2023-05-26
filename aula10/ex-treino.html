@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino  de Function</title>
+    <title>Treino  de Function (Botão)</title>
     <style>
         body{
             background-color: aquamarine;
@@ -33,18 +33,33 @@
 <body>
     <h1>Treino de Função e Escopo em JavaScript</h1>
 
-    <div id="area" onclick="click">Modifique aqui!</div>
+    <div id="area">Modifique aqui!</div>
 
     <script>
-       const div = window.document.querySelector('div#area')
-        div.addEventListener('click', clicou)
+        const div = window.document.querySelector('div#area')
 
-        function clicou (){
-            let area = window.document.querySelector('div#area')
-            area.innerText = 'Clicou!'
-            area.style.background = 'red'
-            area.style. color = 'white'
+        div.addEventListener('click', clicar)
+        div.addEventListener('mouseenter', entrar)
+        div.addEventListener('mouseout', sair)
+
+        function clicar(){
+            div.innerText = 'Clicou!'
+            div.style.backgroundColor = 'blue'
+            div.style.color = 'white'
         }
+
+        function entrar(){
+            div.innerText = 'Entrou!'
+            div.style.backgroundColor = 'yellow'
+            div.style.color = 'black'
+        }
+
+        function sair(){
+            div.innerText = 'Saiu!'
+            div.style.backgroundColor = 'green'
+            div.style.color = 'white'
+        }
+       
     </script>
 </body>
 </html>

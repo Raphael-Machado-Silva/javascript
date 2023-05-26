@@ -37,26 +37,24 @@
 
     <script> /*Pode-se usar o querySelector ou por id neste caso da função clicar, os eventos podem ser adicionados após o id na div mesmo, ou da forma abaixo que polui menos o html */
         const div = window.document.querySelector('div#area')
+        
         div.addEventListener('click', clicar)
         div.addEventListener('mouseenter', entrar)
         div.addEventListener('mouseout', sair)
 
         function clicar() {
-            let clic = window.document.querySelector ('div#area')
-            clic.innerText = 'Clicou!'
-            clic.style.background = 'blue'
-            clic.style.color = 'white'
+            div.innerText = 'Clicou!'
+            div.style.background = 'blue'
+            div.style.color = 'white'
         }
         function entrar(){
-            let ent = window.document.querySelector ('div#area')
-            ent.style.background = 'yellow'
-            ent.style.color = 'black'
-            ent.innerText = 'Entrou!'
+            div.style.background = 'yellow'
+            div.style.color = 'black'
+            div.innerText = 'Entrou!'
         }
         function sair(){
-            let exit = window.document.querySelector ('div#area')
-            exit.style.background = 'gray'
-            exit.innerText = 'Saiu!'
+            div.style.background = 'gray'
+            div.innerText = 'Saiu!'
         }
     </script>
 </body>

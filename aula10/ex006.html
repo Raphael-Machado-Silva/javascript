@@ -31,26 +31,32 @@
     </style>
 </head>
 <body>  <!--EVENTOS DOM-->
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area" >
         Interaja...
     </div>
 
-    <script> /*Pode-se usar o querySelector ou por id neste caso da função clicar */
+    <script> /*Pode-se usar o querySelector ou por id neste caso da função clicar, os eventos podem ser adicionados após o id na div mesmo, ou da forma abaixo que polui menos o html */
+        const div = window.document.querySelector('div#area')
+        div.addEventListener('click', clicar)
+        div.addEventListener('mouseenter', entrar)
+        div.addEventListener('mouseout', sair)
+
         function clicar() {
             let clic = window.document.querySelector ('div#area')
-            clic.innerText = 'Clicou'
+            clic.innerText = 'Clicou!'
             clic.style.background = 'blue'
+            clic.style.color = 'white'
         }
         function entrar(){
             let ent = window.document.querySelector ('div#area')
-            ent.innertext = 'Entrou'
             ent.style.background = 'yellow'
             ent.style.color = 'black'
+            ent.innerText = 'Entrou!'
         }
         function sair(){
             let exit = window.document.querySelector ('div#area')
             exit.style.background = 'gray'
-            exit.innerText = 'Saiu'
+            exit.innerText = 'Saiu!'
         }
     </script>
 </body>

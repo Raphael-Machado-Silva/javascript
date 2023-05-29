@@ -12,11 +12,11 @@
    <div id="container">
     <input type="number" name="box1" id="ibox1"> <strong>+</strong>
     <input type="number" name="box2" id="ibox2">
-    <input type="button" value="Somar" id="isoma" onclick="operação()">
+    <input type="button" value="Somar" id="isoma" >
     <div id="result">Resultado:</div>
    </div>
 
-   <script>
+   <script> /*Deve haver uma maneira mais fácil e resumida de criar um código para somar duas caixas de inputs, no entanto no momento compreendo que está seja a maneira mais simples*/
     let box1 = window.document.querySelector('input#ibox1')
     let box2 = window.document.querySelector('input#ibox2')
     let result = window.document.querySelector('div#result')
@@ -29,29 +29,5 @@
         result.innerHTML = soma
     }
    </script>
-    
-<!--
-    <div id="container">
-        <input type="number" name="caixa1" id="icaixa1"> <strong>+</strong>
-        <input type="number" name="caixa2" id="icaixa2">
-        <input type="button" value="Somar" id="btnSomar">
-        <div id="resultado">Resultado: </div>
-    </div>
-
-    <script>
-        let caixa1 = window.document.querySelector('input#icaixa1')
-        let caixa2 = window.document.querySelector('input#icaixa2')
-        let resultado = window.document.querySelector('div#resultado')
-        let btnSomar = window.document.querySelector('#btnSomar')
-
-        btnSomar.addEventListener('click', operação)
-
-        function operação (){
-            let a = Number(caixa1.value)
-            let b = Number(caixa2.value)
-            let soma = a + b
-            resultado.innerText = soma
-        }
-    </script>-->
 </body>
 </html>

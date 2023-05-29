@@ -17,10 +17,45 @@
             background-image: linear-gradient(to bottom, #595959, #A6A6A6);
             color: white;
         }
+        div#container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
         h1{
             text-align: center;
             font-size: 2em;
-
+            padding: 10px;
+            margin: 10px;
+            text-shadow: 4px 0px 5px black;
+        }
+        input{
+            padding: 8px;
+            margin: 10px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        input#ix{
+            cursor: pointer;
+        }
+        strong{
+            font-size: 2em;
+            text-shadow: 0px 0px 5px black;
+        }
+        div#result{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: 8px;
+            margin: 10px;
+            font-weight: bolder;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -43,7 +78,7 @@
         let a = Number(box1.value)
         let b = Number(box2.value)
         let x = a * b
-        result.innerHTML = x
+        result.innerHTML = ('O Resultado é: '+ x + '!')
     }
    </script>
 </body>

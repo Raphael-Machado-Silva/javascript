@@ -7,9 +7,28 @@
     <title>Operações com Números</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Função de Soma</h1>
 
+   <div id="container">
+    <input type="number" name="box1" id="ibox1"> <strong>+</strong>
+    <input type="number" name="box2" id="ibox2">
+    <input type="button" value="Somar" id="isoma" onclick="operação()">
+    <div id="result">Resultado:</div>
+   </div>
 
+   <script>
+    let box1 = window.document.querySelector('input#ibox1')
+    let box2 = window.document.querySelector('input#ibox2')
+    let result = window.document.querySelector('div#result')
+    isoma.addEventListener('click', operação)
+
+    function operação(){
+        let a = Number(box1.value)
+        let b = Number(box2.value)
+        let soma = a + b
+        result.innerHTML = soma
+    }
+   </script>
     
 <!--
     <div id="container">

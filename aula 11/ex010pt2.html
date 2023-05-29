@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Informe sua Nacionalidade: <input type="text" name="txt" id="itxt">
+    <input type="button" value="Enviar" onclick="verificação()">
+    <div id="res"><p></p></div>
+
+    <script>
+        let txt = window.document.querySelector('input#itxt')
+        let res = window.document.querySelector('div#res')
+
+        function verificação(){
+            let país = txt.value
+            res.innerHTML = `<p>Vivendo em ${país}</p>`
+
+            if (txt.value == 'Brasil'){
+                res.innerHTML += `<p>Você é brasileiro!!</p>`
+            }
+            else {
+                res.innerHTML += `<p>Você é extrangeiro!</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>

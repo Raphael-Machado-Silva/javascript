@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações com Números</title>
+</head>
+<body>
+    <div id="container">
+        <input type="number" name="caixa1" id="icaixa1"> <strong>+</strong>
+        <input type="number" name="caixa2" id="icaixa2">
+        <input type="button" value="Somar">
+        <div id="resultado">Resultado: </div>
+    </div>
+
+    <script>
+        let box1 = window.document.querySelector('input#icaixa1')
+        let box2 = window.document.querySelector('input#icaixa2')
+        let result = window.document.querySelector('div#resultado')
+
+        function operação (){
+            let a = Number(box1.value)
+            let b = Number(box2.value)
+            let soma = a + b
+            result.innerText = soma
+        }
+    </script>
+</body>
+</html>

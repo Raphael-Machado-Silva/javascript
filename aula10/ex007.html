@@ -56,10 +56,11 @@
     </div>
 
     <script> /*Neste momento é importante criar várias variaveis para facilitar a execução e deixar organizado*/
+        let tn1 = window.document.getElementById('txtn1')
+        let tn2 = window.document.querySelector('input#txtn2')
+        let res = window.document.querySelector('div#res') 
+
         function somar(){
-            let tn1 = window.document.getElementById('txtn1')
-            let tn2 = window.document.querySelector('input#txtn2')
-            let res = window.document.querySelector('div#res')
             let n1 = Number(tn1.value)
             let n2 = Number(tn2.value)
             let s = n1 + n2

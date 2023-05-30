@@ -13,14 +13,20 @@
         }
         body{
             background-color: rgb(40, 138, 138);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#container{
+            background-color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Exercício de Horas</h1>
-    <input type="number" name="hora" id="ihora"> 
-    <input type="button" value="Enviar" onclick="calcular()">
-    <div id="res"></div>
+    <div id="container">
+        <h1>Exercício de Horas</h1>
+        <input type="number" name="hora" id="ihora">
+        <input type="button" value="Enviar" onclick="calcular()">
+        <div id="res"></div>
+    </div>
 
     <script>
         let ihora = window.document.querySelector(`input#ihora`)

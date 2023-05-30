@@ -1,6 +1,6 @@
 let agora = new Date()
 let hora = agora.getHours()
-
+//Sempre pode-se usar else if e criar várias condições de uma variável!
 console.log(`Agora são exatamente ${hora} horas`)
 if (hora < 12){
     console.log(`Bom dia!`)

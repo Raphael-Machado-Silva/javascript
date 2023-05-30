@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade Treino</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgb(20, 77, 151), rgb(32, 26, 83));
+            font-size: 1em;
+            width: 100vw;
+            height: 100vh;
+        }
+        div#container{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: auto;
+            border-radius: 15px;
+            border: 3px solid black;
+            box-shadow: 0px 0px 8px white;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div#container > h1{
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            text-shadow: 2px 0px 4px rgba(0, 0, 255, 0.37);
+        }
+        div#container > p{
+            font-size: 1.2em;
+        }
+        div#container > input#itxt{
+            display: inline;
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        div#container > input#button{
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-weight: bolder;
+            font-size: 0.9em;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Treino de JavaScript sobre JavaScript</h1>
-    <p>Informe seu país:</p> <input type="text" name="txt" id="itxt">
-    <input type="button" value="Enviar" onclick="nacionalidade()">
-    <div id="res"></div>
+    <div id="container">
+        <h1>Treino de JavaScript sobre JavaScript</h1>
+        <p>Informe seu país:</p> <input type="text" name="txt" id="itxt">
+        <input type="button" value="Enviar" onclick="nacionalidade()" id="button">
+        <div id="res"></div>
+    </div>
 
     <script>
         let txt = window.document.querySelector('input#itxt')
@@ -21,10 +72,10 @@
             res.innerHTML = `<p>Você vive em ${país}!</p>`
 
             if (país == 'Brasil'){
-                res.innerHTML += 'Você é brasileiro!!'
+                res.innerHTML += '<p>Você é brasileiro!!</p>'
             }
             else{
-                res.innerHTML += `Você é extrangeiro, aproveite o país!`
+                res.innerHTML += `<p>Você é extrangeiro, aproveite o país!</p>`
             }}
     </script>
 </body>

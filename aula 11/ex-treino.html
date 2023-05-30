@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade Treino</title>
+</head>
+<body>
+    <h1>Treino de JavaScript sobre JavaScript</h1>
+    <p>Informe seu país:</p> <input type="text" name="txt" id="itxt">
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+    <div id="res"></div>
+
+    <script>
+        let txt = window.document.querySelector('input#itxt')
+        let res = window.document.querySelector('div#res')
+
+        function nacionalidade(){
+            let país = txt.value
+            res.innerHTML = `<p>Você vive em ${país}!</p>`
+
+            if (país == 'Brasil'){
+                res.innerHTML += 'Você é brasileiro!!'
+            }
+            else{
+                res.innerHTML += `Você é extrangeiro, aproveite o país!`
+            }}
+    </script>
+</body>
+</html>

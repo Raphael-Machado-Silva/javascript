@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+        body{
+            background-color: rgb(40, 138, 138);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Horas</h1>
+    <input type="number" name="hora" id="ihora"> 
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        let ihora = window.document.querySelector(`input#ihora`)
+        let res = window.document.querySelector('div#res')
+
+        function calcular(){
+        let horas = ihora.value
+
+        if (horas < 12){
+            res.innerHTML = `Agora são ${horas} horas, Bom dia!`
+        }
+        else if (horas <=18){
+            res.innerHTML = `Agora são ${horas} horas, Boa tarde!`
+        }
+        else if (horas <= 24){
+            res.innerHTML = `Agora são ${horas} horas, Boa Noite!`
+        }
+        else if (horas > 24){
+            res.innerHTML = `A hora mencionada está invalida!`
+        }
+    }
+    </script>
+</body>
+</html>

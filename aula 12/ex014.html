@@ -29,7 +29,7 @@
             margin: auto;
         }
         img{
-            border-radius: 50%;
+            border-radius: 100%;
         }
         footer{
             margin-top: 30px;
@@ -57,16 +57,30 @@
     <script>
 
         function carregar(){
+
             let msg = document.querySelector('div#msg')
             let img = document.querySelector('img#imagem')
             let data = new Date()
             let hora = data.getHours()
+
             msg.innerHTML = `Agora são ${hora} horas!`
+
             if (hora >= 0 && hora < 12){
-                //bom dia
+                //bom dia!
+                img.src = 'imagens ex014/manha.jpg'
+            }
+            else if (hora >= 12 && hora < 18){
+                //boa tarde!
+                img.src = 'imagens ex014/tarde.jpg'
+            }
+            else if (hora >= 18 && hora <= 24){
+                //boa noite!
+                img.src = 'imagens ex014/noite.jpg'
+            }
+            else if (hora > 24 || hora < 0){
+                alert(`[ERRO]A hora inserida está invalidada, tente novamente!`)
             }
     }
-
     </script>
 </body>
 </html>

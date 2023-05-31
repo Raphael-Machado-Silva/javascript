@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Democracia: Votar</h1>
+        <p>Insira sua idade: </p><input type="number" name="idade" id="iidade">
+        <input type="button" value="Enviar" onclick="votar()">
+        <div id="res"></div>
+    </div>
+
+    <script>
+        let number = window.document.querySelector('input#iidade')
+        let res = window.document.querySelector('div#res')
+
+        function votar(){
+            let idade = number.value
+            if (idade < 16){
+                res.innerHTML = `Por você possuir ${idade} anos, não pode votar!`
+            } else if (idade < 18 || idade > 65){
+                res.innerHTML = `Por você possuir ${idade} anos, o voto é opcional!`
+            } else if (idade > 18 & idade <= 65){
+                res.innerHTML = `Por você possuir ${idade} anos, o voto é obrigatório`
+            }
+        }
+    </script>
+</body>
+</html>

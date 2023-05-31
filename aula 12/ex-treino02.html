@@ -11,6 +11,55 @@
             padding: 0px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, rgb(57, 163, 122), rgb(138, 63, 161));
+        }
+        div#container{
+            background-color: rgb(112, 212, 179);
+            color: black;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 20px;
+            width: 400px;
+            height: 218px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        div#container > h1{
+            padding: 10px;
+            margin-top: 15px;
+            font-weight: bolder;
+            font-size: 2.5em;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 2px 0px 5px rgb(255, 255, 255);
+        }
+        div#container > p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: left;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            padding: 10px;
+        }
+        div#container > input{
+            padding: 6px;
+            border-radius: 15px;
+            font-weight: bolder;
+            font-size: 1em;
+            text-align: center;
+        }
+        div#res{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: bolder;
+            margin-top: 15px;
+        }
+        
     </style>
 </head>
 <body>
@@ -32,7 +81,7 @@
             } else if (idade < 18 || idade > 65){
                 res.innerHTML = `Por você possuir ${idade} anos, o voto é opcional!`
             } else if (idade > 18 & idade <= 65){
-                res.innerHTML = `Por você possuir ${idade} anos, o voto é obrigatório`
+                res.innerHTML = `Por você possuir ${idade} anos, o voto é obrigatório!`
             }
         }
     </script>

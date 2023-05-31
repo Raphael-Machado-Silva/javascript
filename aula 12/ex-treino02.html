@@ -53,6 +53,9 @@
             font-size: 1em;
             text-align: center;
         }
+        div#container > input#button{
+            cursor: pointer;
+        }
         div#res{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
@@ -66,7 +69,7 @@
     <div id="container">
         <h1>Democracia: Votar</h1>
         <p>Insira sua idade: </p><input type="number" name="idade" id="iidade">
-        <input type="button" value="Enviar" onclick="votar()">
+        <input type="button" value="Enviar" onclick="votar()" id="button">
         <div id="res"></div>
     </div>
 
@@ -80,7 +83,7 @@
                 res.innerHTML = `Por você possuir ${idade} anos, não pode votar!`
             } else if (idade < 18 || idade > 65){
                 res.innerHTML = `Por você possuir ${idade} anos, o voto é opcional!`
-            } else if (idade > 18 & idade <= 65){
+            } else if (idade >= 18 & idade <= 65){
                 res.innerHTML = `Por você possuir ${idade} anos, o voto é obrigatório!`
             }
         }

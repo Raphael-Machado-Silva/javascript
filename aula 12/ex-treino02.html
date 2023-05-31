@@ -77,7 +77,7 @@
         let number = window.document.querySelector('input#iidade')
         let res = window.document.querySelector('div#res')
 
-        function votar(){
+        function votar(){ //Necessário colocar esse igual para não excluir a idade de 18 e 16
             let idade = number.value
             if (idade < 16){
                 res.innerHTML = `Por você possuir ${idade} anos, não pode votar!`

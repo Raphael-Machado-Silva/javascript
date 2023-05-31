@@ -28,8 +28,16 @@
             min-width: 200px;
             margin: auto;
         }
+        div#msg{
+            font-weight: bold;
+            font-size: 1.4em;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
         img{
             border-radius: 100%;
+            width: 300px;
+            height: 300px;
         }
         footer{
             margin-top: 30px;
@@ -68,14 +76,17 @@
             if (hora >= 0 && hora < 12){
                 //bom dia!
                 img.src = 'imagens ex014/manha.jpg'
+                document.body.style.backgroundColor = "#e2cd9f";
             }
             else if (hora >= 12 && hora < 18){
                 //boa tarde!
                 img.src = 'imagens ex014/tarde.jpg'
+                document.body.style.backgroundColor = "#b9846f";
             }
             else if (hora >= 18 && hora <= 24){
                 //boa noite!
                 img.src = 'imagens ex014/noite.jpg'
+                document.body.style.backgroundColor = "#515151";
             }
             else if (hora > 24 || hora < 0){
                 alert(`[ERRO]A hora inserida está invalidada, tente novamente!`)

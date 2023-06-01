@@ -55,20 +55,19 @@
 
     <section>
         <div>
-            <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano">
+            <p><strong>Ano de Nascimento:</strong>
+                <input type="number" name="txtano" id="txtano" min="1900" max="2023">
             </p>
-            <p>Sexo:
+            <p><strong>Sexo:</strong>
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="nasc">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar">
+                <input type="button" value="Verificar" onclick="verificar()">
             </p>
         </div>
-
         <div id="res">
             Preencha os dados acima para ver o resultado!
         </div>
@@ -77,7 +76,21 @@
     <footer><p>&copy;Curso em Vídeo</p></footer>
 
     <script>
+        function verificar(){
+            let data = new Date()
+            let ano = data.getFullYear()
+            let fano = document.querySelector('input#txtano')
+            let res = document.querySelector('div#res')
 
+            if(fano.value.length == 0 || fano.value > ano || fano.value < 1900){
+                window.alert('Erro, verifique os dados e tente novamente!')
+            } else {
+                let fsex = document.getElementsByName('radsex')
+                let idade = ano - Number(fano.value)
+                res.innerHTML = `idade calculada ${idade}`
+            }
+
+        }
     </script>
 </body>
 </html>

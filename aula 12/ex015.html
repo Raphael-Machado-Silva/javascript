@@ -35,6 +35,14 @@
             margin: auto;
             font-family: 'Times New Roman', Times, serif;
         }
+        input#enviar{
+            padding: 5px;
+            font-size: 0.6em;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
         img{
             border-radius: 100%;
             width: 300px;
@@ -65,13 +73,13 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Verificar" onclick="verificar()" id="enviar">
             </p>
         </div>
         <div id="res">
             Preencha os dados acima para ver o resultado!
         </div>
-        <img id="foto" src="" alt="Foto">
+        <img id="foto" src="imagens ex014-015/tempo.jpg" alt="Foto">
     </section>
 
     <footer><p>&copy;Curso em Vídeo</p></footer>
@@ -82,8 +90,7 @@
             let ano = data.getFullYear()
             let fano = document.querySelector('input#txtano')
             let res = document.querySelector('div#res')
-
-                        let img = document.querySelector('#foto')
+            let img = document.querySelector('#foto')
 
             if(fano.value.length == 0 || fano.value > ano || fano.value < 1900){
                 window.alert('Erro, verifique os dados e tente novamente!')
@@ -104,30 +111,32 @@
 
                     } else if (idade < 50 ){
                         //adulto
-                        img.setAttribute('src',)
+                        img.setAttribute('src', 'imagens ex014-015/homem.jpg')
 
                     } else {
                         //idoso
+                        img.setAttribute('src', 'imagens ex014-015/velho.jpg')
 
                     }
                 } else if (fsex[1].checked){
                     genero = 'Mulher'
                     if(idade >= 0 && idade < 10 ){
                         //criança
+                        img.setAttribute('src', 'imagens ex014-015/criançaM.jpg')
 
                     } else if (idade < 21){
                         //jovem
+                        img.setAttribute('src', 'imagens ex014-015/jovemmulher.jpg')
    
                     } else if (idade < 50 ){
                         //adulto
-
+                        img.setAttribute('src', 'imagens ex014-015/mulher.jpg')
                     } else {
                         //idoso
+                        img.setAttribute('src', 'imagens ex014-015/velha.jpg')
    
                     }
                 } res.innerHTML = `Detectamos ${genero} com ${idade} anos!`
-            res.appendChild(img)
-
             }
            
         }

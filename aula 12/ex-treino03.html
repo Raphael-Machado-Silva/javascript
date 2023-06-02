@@ -21,7 +21,7 @@
             text-shadow: 4px 0px 5px black;
         }
         section{
-            background-color: coral;
+            background-color: rgb(226, 160, 98);
             margin: auto;
             margin-top: 50px;
             text-align: center;
@@ -35,12 +35,11 @@
             width: 300px;
             margin: auto;
             margin-bottom: 10px;
-            
             font-size: 1.5em;
             font-family: 'Times New Roman', Times, serif;
-            color: white;
+            color: black;
             padding: 15px;
-            text-shadow: 2px 0px 2px black;
+            text-shadow: 2px 0px 2px white;
             border-radius: 25px;
         }
         div#foto{
@@ -55,7 +54,7 @@
 <body onload="verificar()">
     <header><h1>Hora do Dia!</h1></header>
     <main>
-        <section>
+        <section id="dados">
             <div id="msg">
                 Aqui vai aparecer a mensagem...
             </div>
@@ -68,6 +67,7 @@
     <script>
         let msg = window.document.getElementById('msg')
         let img = window.document.querySelector('img#imagem')
+        let section = window.document.querySelector('section#dados')
         let data = new Date()
         let hora = data.getHours()
 
@@ -83,6 +83,7 @@
             } else if (hora >= 18 && hora <= 24){
                 img.src = 'imagens ex014-015/noite.jpg'
                 document.body.style.background = '#515151'
+                section.style.background = 'white'
             } else if (hora > 24){
                 window.alert(`[ERRO], a hora escolhida: ${hora} está inválida!`)
             }

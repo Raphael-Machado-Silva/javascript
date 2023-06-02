@@ -6,18 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia!</title>
 </head>
-<body>
+<body onload="verificar()">
     <header><h1>Hora do Dia!</h1></header>
     <main>
         <section>
             <div id="msg">
-                
+                Aqui vai aparecer a mensagem...
             </div>
             <div id="foto">
-                <img src="imagens ex014-015/tempo.jpg" alt="foto-do-horário">
+                <img id="imagem" src="imagens ex014-015/tempo.jpg" alt="foto-do-horário">
             </div>
         </section>
     </main>
-    
+
+    <script>
+        let msg = window.document.getElementById('msg')
+        let img = window.document.querySelector('img#imagem')
+        let data = new Date()
+        let hora = data.getHours()
+
+        msg.innerHTML = `Agora são ${hora} horas!!!`
+
+        function verificar(){
+            if (hora < 12){
+                msg.src =  'imagem ex014-015/manha.jpg'
+                document.body.style.background = 'blue'
+            }
+
+
+
+        }
+
+    </script>
 </body>
 </html>

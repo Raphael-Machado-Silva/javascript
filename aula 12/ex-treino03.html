@@ -37,12 +37,10 @@
             } else if (hora >= 18 && hora <= 24){
                 img.src = 'imagens ex014-015/noite.jpg'
                 document.body.style.background = '#515151'
+            } else if (hora > 24){
+                window.alert(`[ERRO], a hora escolhida: ${hora} está inválida!`)
             }
-
-
-
         }
-
     </script>
 </body>
 </html>

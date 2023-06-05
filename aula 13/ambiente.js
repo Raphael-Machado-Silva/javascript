@@ -9,7 +9,7 @@ console.log('Tudo Bem?') */
 let c = 1
 // while = enquanto ---- do = faça
 
-while (c <= 6){ // (teste lógico no início)
+while (c <= 6){ // Teste lógico no início (usar mais essa)
     console.log(`Passo ${c}!`)
     c++ // c = c+1
 } 

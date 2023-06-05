@@ -8,7 +8,7 @@ console.log('Tudo Bem?') */
 
 let c = 1
 
-while (c < 6){
-    console.log('Tudo Bem?')
-    c++
+while (c <= 6){ // (teste lógico no início)
+    console.log(`Passo ${c}!`)
+    c++ // c = c+1
 }

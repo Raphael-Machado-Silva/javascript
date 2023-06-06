@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body{
-            background-color: rgb(119, 151, 187);
+            background-color: rgb(93, 120, 150);
         }
         header{
             color: white;
@@ -46,6 +46,9 @@
             border-radius: 10px;
             cursor: pointer;
         }
+        div#res{
+            font-size: 1.2em;
+        }
         footer{
             margin-top: 50px;
             text-align: center;
@@ -61,10 +64,10 @@
 
     <section>
         <div id="valores">
-            Início: <input type="number" name="inicio" id="iinicio"> <br>
-            Fim: <input type="number" name="fim" id="ifim"> <br>
-            Passo: <input type="number" name="passo" id="ipasso"> <br>
-            <input type="button" value="Contar" id="icontar" onclick="calcular()">
+            <p>Início: <input type="number" name="inicio" id="iinicio"> </p>
+            <p>Fim: <input type="number" name="fim" id="ifim"> </p> 
+            <p>Passo: <input type="number" name="passo" id="ipasso"> </p>
+            <p><input type="button" value="Contar" id="icontar" onclick="calcular()"> </p>
         </div>
         <div id="res">
             Preparando Contagem....
@@ -76,8 +79,8 @@
 
     <script>
         var inicio = window.document.querySelector('input#iinicio')
-        var fim = window.document.querySelector('ifim')
-        var passo = window.document.querySelector('ipasso')
+        var fim = window.document.querySelector('input#ifim')
+        var passo = window.document.querySelector('input#ipasso')
         var contar = window.document.querySelector('input#icontar')
         var res = window.document.querySelector('div#res')
 
@@ -86,14 +89,27 @@
             let n2 = Number(fim.value)
             let n3 = Number(passo.value)
 
-           
-
-
-
-
-        }
-
-       
+            if (n1 === 0|| n3 === 0 || n2 === 0){
+                window.alert('[ERRO] Faltam dados!')
+            } 
+            else { // Estudar essa parte depois!!!!
+                res.innerHTML = `<strong>Resultado: </strong>`
+                if(n1 < n2){
+                    //Contagem crescente
+                    for(let c = n1; c <= n2; c+= n3){
+                    res.innerHTML += ` ${c} \u{25B6} `
+                }
+                
+                } else {
+                    //Contagem regressiva
+                    for ( let c = n1; c >= n2; c-= n3){
+                        res.innerHTML += ` ${c} \u{25B6} `
+                    }
+                    
+                    }
+                    res.innerHTML += `\u{1f3c1}`
+                }
+            }
     </script>
 </body>
 </html>

@@ -6,58 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
         body{
-            background-color: rgb(70, 70, 230);
-            font: normal 15pt Arial;
+            background-color: rgb(156, 245, 215);
         }
-        header{
-            color: white;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 1.5em;
-            text-align: center;
-            text-shadow: 5px 0px 2px black;
-        }
-        section{
-            text-align: center;
-            background-color: white;
-            border-radius: 15px;
-            border: 1px solid black;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
-            padding: 15px;
-            max-width: 500px;
-            min-width: 200px;
-            margin: auto;
-        }
-        div#msg{
-            font-weight: bold;
-            font-size: 1.4em;
-            padding: 10px;
-            margin: auto;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        img{
-            border-radius: 100%;
-            width: 300px;
-            height: 300px;
-        }
-        footer{
-            margin-top: 30px;
-            text-align: center;
-            color: white;
-            font-style: italic;
-        }
-
     </style>
 </head>
-<body onload="carregar()"> <!--USAR ESSE COMANDO ONLOAD PARA EXECUTAR A FUNCTION-->
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1></h1>
     </header>
 
     <section>
-        <div id="msg">Aqui vai aparecer a mensagem...</div>
-        <div id="foto">
-           <img id="imagem" src="imagens ex014/manha.jpg" alt="foto do dia">
+        <div></div>
+        <div>
+
         </div>
     </section>
 
@@ -65,34 +32,7 @@
 
     <script>
 
-        function carregar(){
-
-            let msg = document.querySelector('div#msg')
-            let img = document.querySelector('img#imagem')
-            let data = new Date()
-            let hora = data.getHours()
-
-            msg.innerHTML = `Agora são ${hora} horas!`
-
-            if (hora >= 0 && hora < 12){
-                //bom dia!
-                img.src = 'imagens ex014/manha.jpg'
-                document.body.style.backgroundColor = "#e2cd9f";
-            }
-            else if (hora >= 12 && hora < 18){
-                //boa tarde!
-                img.src = 'imagens ex014/tarde.jpg'
-                document.body.style.backgroundColor = "#b9846f";
-            }
-            else if (hora >= 18 && hora <= 24){
-                //boa noite!
-                img.src = 'imagens ex014/noite.jpg'
-                document.body.style.backgroundColor = "#515151";
-            }
-            else if (hora > 24 || hora < 0){
-                alert(`[ERRO]A hora inserida está invalidada, tente novamente!`)
-            }
-    }
+       
     </script>
 </body>
 </html>

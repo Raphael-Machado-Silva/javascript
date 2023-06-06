@@ -1,4 +1,3 @@
-var c = 1
 
 /*Estrutura de repetição sem variável de controle
 --------------------------------------------------------

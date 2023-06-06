@@ -64,7 +64,7 @@
             Início: <input type="number" name="inicio" id="iinicio"> <br>
             Fim: <input type="number" name="fim" id="ifim"> <br>
             Passo: <input type="number" name="passo" id="ipasso"> <br>
-            <input type="button" value="Contar">
+            <input type="button" value="Contar" id="icontar" onclick="calcular()">
         </div>
         <div id="res">
             Preparando Contagem....
@@ -75,6 +75,23 @@
     <footer><p>&copy;Curso em Vídeo</p></footer>
 
     <script>
+        var inicio = window.document.querySelector('input#iinicio')
+        var fim = window.document.querySelector('ifim')
+        var passo = window.document.querySelector('ipasso')
+        var contar = window.document.querySelector('input#icontar')
+        var res = window.document.querySelector('div#res')
+
+        function calcular(){
+            let n1 = Number(inicio.value)
+            let n2 = Number(fim.value)
+            let n3 = Number(passo.value)
+
+           
+
+
+
+
+        }
 
        
     </script>

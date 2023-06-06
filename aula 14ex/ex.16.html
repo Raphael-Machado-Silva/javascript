@@ -12,18 +12,62 @@
             box-sizing: border-box;
         }
         body{
-            background-color: rgb(156, 245, 215);
+            background-color: rgb(119, 151, 187);
+        }
+        header{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20%;
+            margin-bottom: 20px;
+        }
+        section{
+            background-color: white;
+            margin: auto;
+            min-width: 400px;
+            max-width: 500px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px white;
+            padding: 20px;
+            text-align: center;
+        }
+        div#valores{
+            margin: auto;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-family: arial;
+            color: black;
+        }
+        input{
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        footer{
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Hora de Contar</h1>
     </header>
 
     <section>
-        <div></div>
-        <div>
+        <div id="valores">
+            Início: <input type="number" name="inicio" id="iinicio"> <br>
+            Fim: <input type="number" name="fim" id="ifim"> <br>
+            Passo: <input type="number" name="passo" id="ipasso"> <br>
+            <input type="button" value="Contar">
+        </div>
+        <div id="res">
+            Preparando Contagem....
 
         </div>
     </section>

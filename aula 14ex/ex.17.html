@@ -74,7 +74,9 @@
             <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
         <div id="res">
-            <select name="tabuada" id="seltab"></select>
+            <select name="tabuada" id="seltab" size="10">
+                
+            </select>
         </div>
     </section>
 
@@ -90,12 +92,16 @@
                 window.alert('Por favor, digite um número!')
             } else {
                 let n = Number(nun.value)
+                let c = 1
+
+                //NECESSÁRIO ESTUDAR ESSE FOR
+                for(let c = 1; c <=10; c++  ){
+                    let item = document.createElement('option') 
+                    item.text = `${n} x ${c} = ${n*c}`
+                    tab.appendChild(item) //para criar dentro do TAB um elemento ITEM
+                }
             }
-
-            
         }
-
-       
     </script>
 </body>
 </html>

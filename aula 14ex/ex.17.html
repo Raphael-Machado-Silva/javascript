@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
     <style>
         *{
             margin: 0px;
@@ -12,7 +12,54 @@
             box-sizing: border-box;
         }
         body{
-            background-color: rgb(156, 245, 215);
+            background-color: rgb(94, 148, 130);
+        }
+        header{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20%;
+            margin-bottom: 20px;
+        }
+        section{
+            background-color: white;
+            margin: auto;
+            min-width: 400px;
+            max-width: 500px;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px white;
+            padding: 20px;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        div#valores{
+            margin: auto;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-family: arial;
+            color: black;
+        }
+        input{
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 1.1em;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        div#res{
+            font-size: 1.2em;
+        }
+        footer{
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -22,8 +69,13 @@
     </header>
 
     <section>
-        <div></div>
         <div>
+            <p>Número: <input type="number" name="nun" id="txtn">
+            <input type="button" value="Gerar Tabuada"></p>
+
+        </div>
+        <div id="res">
+            <select name="tabuada" id="seltab"></select>
 
         </div>
     </section>

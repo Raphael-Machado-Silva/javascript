@@ -61,7 +61,6 @@
     <header>
         <h1>Hora de Contar</h1>
     </header>
-
     <section>
         <div id="valores">
             <p>Início: <input type="number" name="inicio" id="iinicio"> </p>
@@ -71,10 +70,8 @@
         </div>
         <div id="res">
             Preparando Contagem....
-
         </div>
     </section>
-
     <footer><p>&copy;Curso em Vídeo</p></footer>
 
     <script>
@@ -93,19 +90,16 @@
                 window.alert('[ERRO] Faltam dados!')
             } 
             else { // Estudar essa parte depois!!!!
-                res.innerHTML = `<strong>Resultado: </strong>`
-                if(n1 < n2){
-                    //Contagem crescente
-                    for(let c = n1; c <= n2; c+= n3){
-                    res.innerHTML += ` ${c} \u{25B6} `
-                }
-                
-                } else {
-                    //Contagem regressiva
-                    for ( let c = n1; c >= n2; c-= n3){
-                        res.innerHTML += ` ${c} \u{25B6} `
-                    }
-                    
+            res.innerHTML = `<strong>Resultado: </strong>`
+                    if(n1 < n2){
+                        //Contagem crescente
+                        for(let c = n1; c <= n2; c+= n3){
+                        res.innerHTML += ` ${c} \u{25B6} `}
+                    } else {
+                        //Contagem regressiva
+                        for ( let c = n1; c >= n2; c-= n3){
+                            res.innerHTML += ` ${c} \u{25B6} `
+                        }
                     }
                     res.innerHTML += `\u{1f3c1}`
                 }

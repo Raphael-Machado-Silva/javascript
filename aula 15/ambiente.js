@@ -8,5 +8,6 @@ num.sort() // colocar em ordem crescente
 num.length // esta tag serve para mostrar quantos elementos este vetor possui
 
 console.log(`Nossa variável é: ${num}`)
+console.log(`O meu elemento que ocupa a posição 1 é: ${num[1]}!`)
 console.log(`Meu vetor possui: ${num.length} elementos!`)
 

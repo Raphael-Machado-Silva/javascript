@@ -1,7 +1,4 @@
-let num = []
+let num = [5, 8, 2, 9, 3]
 
-console.log(`Nossa variável é: ${nun}`)
+console.log(`Nossa variável é: ${num}`)
 
-let n1 = 1
-
-console.log(n1)

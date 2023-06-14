@@ -52,6 +52,7 @@
         nav {
             max-width: 400px;
             min-width: 200px;
+            box-shadow: 0px 0px 5px black;
             background-color: #f8f8f8;
             padding: 10px;
             border-radius: 30px;
@@ -81,7 +82,23 @@
             text-decoration: underline;
             color: #0D0D0D;
             background-color: #BFB3A4;
-            
+          }
+          main{
+            background-color: #D9B1A3;
+            margin: auto;
+            max-width: 900px;
+            min-width: none;
+            padding: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+          }
+          section#inicio{
+            background-color: #733E1F;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            text-shadow: 0px 0px 5px black;
           }
 
     </style>
@@ -91,20 +108,20 @@
         <div class="ti">
             <h1>Café do Jorge</h1> 
             <nav><ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Cardápio</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#menu">Cardápio</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul></nav>
         </div>
     </header>
     <main>
         <section id="inicio">
             <h2>Bem-vindo à Cafeteria!</h2>
-            <h3>Aqui você encontra as suas melhores sensações.</h3>
+            <h4>Aqui você encontra as suas melhores sensações.</h4>
         </section>
         <section id="menu">
-            <h2>Cardápio</h2>
+            <h3>Cardápio</h3>
             <p>Contamos com um menu vasto e repleto de lanches, bebidas e doces inspirados na culinária típica de Minas Gerais. Tudo é preparado com produtos de alta qualidade e com técnicas profissionais, garantindo uma experiência única em cada refeição.</p>
             <ul>
                 <li>Café Forte</li>
@@ -116,22 +133,19 @@
           </section>
         
           <section id="sobre">
-            <h2>Sobre</h2>
+            <h3>Sobre</h3>
             <p>"Pegando carona" na loja do Jorge, fundada em 1990 por Jorge Soares, o Café do Jorge foi criado em busca de compartilhar amor, empatia e muitos momentos especiais através desse mundo totalmente cor de rosa, cor escolhida por possuir propriedades calmantes e tranquilizantes que despertam empatia e também por ser a cor universal e fraternal do amor. A cafeteria entende que tomar um bom café é um momento de conexão, de poder olhar apenas o lado bom das coisas, de viver e espalhar o amor.</p>
 
             <p>Inspirado nas melhores cafeterias européias, o Café do Jorge traz um ambiente moderno, sofisticado e aconchegante com várias opções em cafés elaborados com grãos selecionados para proporcionar sabor e aroma, cativar o paladar e trazer boas energias para todos os tipos de consumidores. Possui também uma vasta opção de saladas, lanchinhos, torradas, omeletes e sobremesas extremamente deliciosas.</p>
           </section>
         
           <section id="contato">
-            <h2>Contato</h2>
-            <!-- Conteúdo da seção Contato -->
+            <h3>Contato</h3>
+            <p>Para entrar em contato acesse nossas redes-sociais ou disque (13) 997892751!</p>
           </section>
-        
-          <footer>
-            <p>&copy; 2023 Café do Jorge. Todos os direitos reservados.</p>
-          </footer>
-        
     </main>
-    
+     <footer>
+            <p>&copy; 2023 Café do Jorge. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

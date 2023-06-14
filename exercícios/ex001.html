@@ -47,8 +47,11 @@
             border-radius: 30px;
         }
         nav {
+            max-width: 400px;
+            min-width: 200px;
             background-color: #f8f8f8;
             padding: 10px;
+            border-radius: 30px;
           }
           
           ul {
@@ -57,16 +60,25 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            
           }
           
           li {
             margin: 0 10px;
+            flex-grow: 1;
           }
           
           a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            
+          }
+          a:hover{
+            text-decoration: underline;
+            color: #0D0D0D;
+            background-color: #BFB3A4;
+            
           }
 
     </style>
@@ -74,17 +86,40 @@
 <body>
     <header>
         <div class="ti">
-            <h1>Cafeteria do Jorge</h1>
-        </div>
-        <nav>
-            <ul>
+            <h1>Cafeteria do Jorge</h1> 
+            <nav><ul>
               <li><a href="#">Início</a></li>
               <li><a href="#">Cardápio</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Contato</a></li>
-            </ul>
-          </nav>
+            </ul></nav>
+        </div>
     </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo à Cafeteria!</h2>
+            <h3>Aqui você encontra as suas melhores sensações.</h3>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Conteúdo da seção Menu -->
+          </section>
+        
+          <section id="sobre">
+            <h2>Sobre</h2>
+            <!-- Conteúdo da seção Sobre -->
+          </section>
+        
+          <section id="contato">
+            <h2>Contato</h2>
+            <!-- Conteúdo da seção Contato -->
+          </section>
+        
+          <footer>
+            <p>&copy; 2023 Cafeteria. Todos os direitos reservados.</p>
+          </footer>
+        
+    </main>
     
 </body>
 </html>

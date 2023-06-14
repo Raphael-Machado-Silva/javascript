@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family= Oswald :wght@200;300;400;500;600;700 & display=swap');
         *{
             margin: 0%;
             padding: 0%;
@@ -23,6 +24,9 @@
             background-position: center;
             background-repeat: no-repeat;
             height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         h1{
             color: white;
@@ -32,11 +36,38 @@
             color: white;
             text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             padding: 10px;
-            padding-top: 20px;
+            font-family: 'Oswald';
         }
         header > div.ti{
+            display: block;
             background-color: #401E12;
+            width: 300px;
+            height: 50px;
+            margin: auto;
+            border-radius: 30px;
         }
+        nav {
+            background-color: #f8f8f8;
+            padding: 10px;
+          }
+          
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+          }
+          
+          li {
+            margin: 0 10px;
+          }
+          
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+          }
 
     </style>
 </head>
@@ -45,6 +76,14 @@
         <div class="ti">
             <h1>Cafeteria do Jorge</h1>
         </div>
+        <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Cardápio</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
     </header>
     
 </body>

@@ -1,4 +1,4 @@
-// ----VETORES EM JAVASCRIPT (VARIAVEIS COMPOSTAS)----
+/* //----VETORES EM JAVASCRIPT (VARIAVEIS COMPOSTAS)----
 
 let num = [5, 8, 2, 9, 3] 
 
@@ -11,4 +11,6 @@ console.log(`Nossa variável é: ${num}`)
 console.log(`O meu elemento que ocupa a posição 1 é: ${num[1]}!`)
 console.log(`Meu vetor possui: ${num.length} elementos!`)
 
-//---------------OBS: Vetores usam [] e não {} ----------------
+//---------------OBS: Vetores usam [] e não {} ---------------- */
+
+

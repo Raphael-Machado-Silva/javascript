@@ -14,9 +14,11 @@ console.log(`Meu vetor possui: ${num.length} elementos!`)
 //---------------OBS: Vetores usam [] e não {} ---------------- */
 
 
-let num = [1, 5, 8 , 43, 5];
+let num = [1, 6, 8 , 43, 5];
 
 num[5] = 4 //adicionar um elemento em uma posição nova ou substituir algum valor
-num.push(1) //mesma função do de cima
+num.push(2) //mesma função do de cima
+num.sort() //ordem crescente
+num.length //usado para falar quantas casas o mesmo possui!
 
-console.log(`Nosso vetor é o ${num}!`)
+console.log(`Nosso vetor é o ${num}!, este vetor possui ${num.length} elementos.`)

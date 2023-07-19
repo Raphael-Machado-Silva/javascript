@@ -16,4 +16,7 @@ console.log(`Meu vetor possui: ${num.length} elementos!`)
 
 let num = [1, 5, 8 , 43, 5];
 
+num[5] = 4 //adicionar um elemento em uma posição nova ou substituir algum valor
+num.push(1) //mesma função do de cima
+
 console.log(`Nosso vetor é o ${num}!`)

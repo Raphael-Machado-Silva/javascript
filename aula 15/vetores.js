@@ -11,7 +11,7 @@ for(let pos=0; pos < valores.length; pos++){
 }
 
 
-// Maneira mais simples de fazer o exemplo acima
+// Maneira mais simples de fazer o exemplo acima, está é a maneira facilitadora para usar vetores ao invés da de cima que também é mt eficiente
 for(let pos in valores){
     console.log(valores[pos])
 }

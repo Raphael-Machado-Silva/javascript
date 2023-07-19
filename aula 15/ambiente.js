@@ -14,3 +14,6 @@ console.log(`Meu vetor possui: ${num.length} elementos!`)
 //---------------OBS: Vetores usam [] e não {} ---------------- */
 
 
+let num = [1, 5, 8 , 43, 5];
+
+console.log(`Nosso vetor é o ${num}!`)

@@ -7,5 +7,5 @@ function parimp(n){ //par ou impar função
         return 'impar'
     }
 }
-let res = parimp(27)
+let res = parimp(28)
 console.log(res)

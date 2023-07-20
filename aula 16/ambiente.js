@@ -1,6 +1,6 @@
 //  -------------------------------Funções------------------------------
 
-function parimp(n){
+function parimp(n){ //par ou impar função
     if(n%2==0){
         return 'par'
     } else {
@@ -8,5 +8,4 @@ function parimp(n){
     }
 }
 let res = parimp(27)
-
 console.log(res)

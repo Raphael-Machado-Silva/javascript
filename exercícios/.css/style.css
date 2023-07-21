@@ -69,6 +69,7 @@ div.bottom{
     font-size: 1.2rem;
 }
 
+
 select{
     font-size: 1.1rem;
     padding: 10px;
@@ -77,8 +78,9 @@ select{
     border-bottom-left-radius: 10px;
 }
 
+
 footer{
     color: white;
-    font-size: 1.5rem;
-    margin-top: 20px;
+    font-size: 1.4rem;
+    margin-top: 25px;
 }

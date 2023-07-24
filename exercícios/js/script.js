@@ -53,10 +53,12 @@ function finalizar(){
             menor = valores[pos]
         }
     }
+    media = soma / tot
     res.innerHTML = ''
     res.innerHTML += `<p> Ao todo, temos ${tot} elementos cadastrados.</p>`
     res.innerHTML += `<p> O maior valor informado foi ${maior}.</p>`
     res.innerHTML += `<p> O menor valor informado foi ${menor}.</p>`
-    res.innerHTML += `<p> A soma dos valores foi ${soma}.</p>`
+    res.innerHTML += `<p> A soma dos valores é ${soma}.</p>`
+    res.innerHTML += `<p> A media dos valores informados é ${media}.</p>`
 }
 }

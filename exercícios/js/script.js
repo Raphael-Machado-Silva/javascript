@@ -20,7 +20,7 @@ function isLista (n, l){ //verificar se o valor está na lista
 }
 function adicionar(){ //verificar se é um número, e se ele não está na lista a ação que deve ser feita é inseri-lo na lista
     if(isNumero(num.value) && !isLista(num.value, valores)){
-
+        valores.push(num.value);
     } else{
         window.alert("Valor inválido ou já encontrado na lista!")
     }

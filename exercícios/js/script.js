@@ -25,10 +25,23 @@ function adicionar(){ //verificar se é um número, e se ele não está na lista
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item);
+        res.innerHTML = ''
     } else{
         window.alert("Valor inválido ou já encontrado na lista!")
     }
                    //Para apagar o valor do input ao envia-lo
     num.value = ""
     num.focus()
+}
+
+function finalizar(){
+    if(valores.length == 0){
+        window.alert('Adicione valores antes de finalizar!')
+} else{
+    let tot = valores.length
+
+
+    res.innerHTML = ''
+    res.innerHTML += `<p> Ao todo, temos ${tot} elementos cadastrados.</p>`
+}
 }

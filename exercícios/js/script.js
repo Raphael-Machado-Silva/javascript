@@ -18,7 +18,7 @@ function isLista (n, l){ //verificar se o valor está na lista
         return false;
     }
 }
-function adicionar(){ //verificar se é um número e se já está na lista e inserilo na lista
+function adicionar(){ //verificar se é um número, e se ele não está na lista a ação que deve ser feita é inseri-lo na lista
     if(isNumero(num.value) && !isLista(num.value, valores)){
 
     } else{

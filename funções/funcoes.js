@@ -7,12 +7,19 @@
         Função Arrow / Arrow Function
 
 */
-let valor = 20
 
+/*
+---------------------Função Vazia---------------------------
+let valor = 20
 function incremento(){
         valor = 20 + 30
+}
+incremento()
+console.log(valor) */
 
+
+function mostraNome(nome){
+    console.log(nome)
 }
 
-incremento()
-console.log(valor)
+mostraNome('Rodolfo')

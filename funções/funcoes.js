@@ -6,8 +6,9 @@
         Função Return 
         Função Arrow / Arrow Function
 
+*/
+//------------------Função Vazia (sem retorno)----------------
 
-------------------Função Vazia (sem retorno)----------------
 let valor = 20
 function incremento(){
         valor = 20 + 30
@@ -15,7 +16,7 @@ function incremento(){
 incremento()
 console.log(valor) 
 
-------------------Função com Parâmetros---------------------------
+//-------------Função com Parâmetros-----------
 
 function mostraNome(nome){
     console.log(nome)
@@ -25,8 +26,7 @@ mostraNome('Rodolfo')
 mostraNome('Raphael')
 
 
-
-----Função  Return (ela calcula e retorna o valor para a const) ----
+//----Função  Return (ela calcula e retorna o valor para a const) ----
 
 function soma(n1, n2){
     const somaDosNumeros = n1 + n2;
@@ -36,4 +36,13 @@ const res = soma(4,6)
 
 console.log(res)
 
-*/
+// -----Função Arrow (forma moderna de escrever uma função)-----
+
+const multi = (numero1, numero2) =>{
+    const multiplicacao = numero1 * numero2;
+
+    return multiplicacao
+}
+
+const result = multi(2,6)
+console.log(result)

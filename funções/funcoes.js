@@ -7,7 +7,7 @@
         Função Arrow / Arrow Function
 
 
----------------------Função Vazia---------------------------
+------------------Função Vazia (sem retorno)----------------
 let valor = 20
 function incremento(){
         valor = 20 + 30
@@ -23,11 +23,17 @@ function mostraNome(nome){
 
 mostraNome('Rodolfo')
 mostraNome('Raphael')
-*/
 
+
+
+----Função  Return (ela calcula e retorna o valor para a const) ----
 
 function soma(n1, n2){
     const somaDosNumeros = n1 + n2;
-    console.log(somaDosNumeros)
+    return somaDosNumeros
 }
-soma(5,8)
+const res = soma(4,6)
+
+console.log(res)
+
+*/

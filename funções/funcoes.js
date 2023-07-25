@@ -7,5 +7,11 @@
         Função Arrow / Arrow Function
 
 */
+let valor = 20
 
-function incremento
+function incremento(){
+        console.log('Estou dentro da função')
+
+}
+
+console.log(valor)

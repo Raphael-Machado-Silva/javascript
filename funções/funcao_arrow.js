@@ -1,4 +1,4 @@
-//-----------------Funções Arrow-------------------
+//-----------------Funções Arrow / Arrow Function-------------------
 
 const multi = (n1, n2)  => {
     const multiplicaçao = n1 * n2;

@@ -1,3 +1,5 @@
+//-----------------Funções Arrow-------------------
+
 const multi = (n1, n2)  => {
     const multiplicaçao = n1 * n2;
     return multiplicaçao
@@ -20,5 +22,5 @@ const divisao = (n1, n2)  => {
     return div
 }
 
-const resultado = divisao(5,6)
+const resultado = divisao(12,6)
 console.log(resultado)

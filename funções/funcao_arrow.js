@@ -24,3 +24,11 @@ const divisao = (n1, n2)  => {
 
 const resultado = divisao(12,6)
 console.log(resultado)
+
+//----------------------------------------------------------------
+const subtracao = (n1, n2) => {
+    const menos = n1 - n2;
+    return menos
+}
+const resposta = subtracao(12,6)
+console.log(resposta)

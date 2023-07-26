@@ -15,10 +15,10 @@ const result = soma(5,6)
 console.log(result)
 
 //----------------------------------------------------------------
-const soma = (n1, n2)  => {
-    const adicao = n1 + n2;
-    return adicao
+const divisao = (n1, n2)  => {
+    const div = n1 / n2;
+    return div
 }
 
-const result = soma(5,6)
-console.log(result)
+const resultado = divisao(5,6)
+console.log(resultado)
